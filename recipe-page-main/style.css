@@ -1,0 +1,144 @@
+@font-face {
+  font-family: outfit;
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: young-serif;
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+
+  --brown-800: hsl(14, 45%, 36%);
+
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+
+  --heading-font-family: young-serif, serif;
+  --text-font-family: outfit, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--text-font-family);
+  margin: 2rem;
+  font-size: 1rem;
+  color: var(--stone-600);
+}
+
+.omelette-image {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.main-heading,
+.secondary-heading {
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  margin-block: 1rem;
+}
+
+.main-heading {
+  font-size: 3rem;
+  color: var(--stone-900);
+}
+
+.secondary-heading {
+  font-size: 2rem;
+  color: var(--brown-800);
+}
+
+.card {
+  background: var(--rose-50);
+  border-radius: 1rem;
+  margin-block: 2rem;
+  padding: 1rem;
+
+  .card-heading {
+    color: var(--rose-800);
+    margin: 1rem;
+  }
+
+  .card-body {
+    ul {
+      margin: 1rem 2.5rem;
+
+      li {
+        padding: 0.5rem 1rem;
+
+        strong,
+        span {
+          color: var(--stone-600);
+        }
+      }
+      li::marker {
+        color: var(--rose-800);
+      }
+    }
+  }
+}
+
+.list {
+  margin: 1rem 1.5rem;
+
+  li {
+    padding: 0.5rem 1rem;
+  }
+
+  li::marker {
+    color: var(--brown-800);
+    font-weight: 600;
+  }
+}
+
+hr {
+  margin-block: 2rem;
+  border: none;
+  border-top: 1px solid var(--stone-150);
+}
+
+.nutrition-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-block: 2rem;
+
+  hr {
+    margin-block: 1rem;
+    grid-column: span 2;
+  }
+
+  span {
+    margin-left: 2rem;
+  }
+
+  strong {
+    color: var(--brown-800);
+  }
+}
+
+@media (max-width: 40rem) {
+  .omelette-image {
+    width: 100vw;
+    border-radius: 0;
+    margin: -2rem;
+    margin-bottom: 0;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+  }
+}
