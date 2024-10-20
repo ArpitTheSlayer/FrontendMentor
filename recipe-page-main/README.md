@@ -28,8 +28,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://github.com/arpittheslayer/FrontendMentor/tree/main/recipe-page-main)
+- [Live Site URL](https://arpittheslayer.github.io/FrontendMentor/recipe-page-main)
 
 ## My process
 
@@ -57,7 +57,7 @@ I learned how to use .ttf font files using css font face.
 
 ## Author
 
-- Website - [Arpit Pandey](https://www.github.com/arpittheslayer)
+- Github - [Arpit Pandey](https://www.github.com/arpittheslayer)
 - Frontend Mentor - [@ArpitTheSlayer](https://www.frontendmentor.io/profile/arpittheslayer)
 - Linkedin - [@arpitheslayer](https://www.linkedin.com/in/arpittheslayer)
 
