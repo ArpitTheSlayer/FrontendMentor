@@ -9,7 +9,8 @@
 }
 
 :root {
-  --white: hsl(0, 0%, 100%);
+  --background-color: hsl(29, 53%, 90%);
+  --foreground-color: hsl(0, 0%, 100%);
 
   --stone-100: hsl(30, 54%, 90%);
   --stone-150: hsl(30, 18%, 87%);
@@ -34,15 +35,25 @@
 }
 
 body {
+  background: var(--background-color);
   font-family: var(--text-font-family);
-  margin: 2rem;
   font-size: 1rem;
   color: var(--stone-600);
+  padding: 2rem;
+}
+
+main {
+  margin: 0 auto;
+  margin-block: 2rem;
+  padding: 1.5rem;
+  background: var(--foreground-color);
+  border-radius: 1rem;
+  width: 40rem;
 }
 
 .omelette-image {
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 .main-heading,
@@ -53,12 +64,12 @@ body {
 }
 
 .main-heading {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--stone-900);
 }
 
 .secondary-heading {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--brown-800);
 }
 
@@ -113,25 +124,48 @@ hr {
 }
 
 .nutrition-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-block: 2rem;
+  width: 100%;
+  text-align: left;
+  margin-top: 2rem;
+  border-collapse: collapse;
 
-  hr {
-    margin-block: 1rem;
-    grid-column: span 2;
+  tr {
+    border-bottom: 1px solid var(--stone-150);
   }
 
-  span {
-    margin-left: 2rem;
+  tr:last-child {
+    border-bottom: none;
   }
 
-  strong {
+  th,
+  td {
+    padding-block: 1rem;
+  }
+
+  th {
+    padding-left: 2rem;
+    font-weight: 400;
+  }
+
+  td {
     color: var(--brown-800);
   }
 }
 
 @media (max-width: 40rem) {
+  body {
+    background: var(--foreground-color);
+    margin: 2rem;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    width: 100%;
+  }
+
   .omelette-image {
     width: 100vw;
     border-radius: 0;
@@ -139,7 +173,7 @@ hr {
     margin-bottom: 0;
   }
 
-  .main-heading {
-    font-size: 2rem;
+  .nutrition-container {
+    margin-bottom: 2rem;
   }
 }
