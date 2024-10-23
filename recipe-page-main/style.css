@@ -152,10 +152,9 @@ hr {
   }
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 45rem) {
   body {
     background: var(--foreground-color);
-    margin: 2rem;
   }
 
   main {
