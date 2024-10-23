@@ -6,4 +6,8 @@ Given below are the live links to the websites of the challenges that I have com
 
 # Live
 
+- [QR Code Component](https://arpittheslayer.github.io/FrontendMentor/qr-code-component-main/)
+
+- [Blog Preview Card](https://arpittheslayer.github.io/FrontendMentor/blog-preview-card-main/)
+
 - [Recipe Page](https://arpittheslayer.github.io/FrontendMentor/recipe-page-main/)
