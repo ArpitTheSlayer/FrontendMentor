@@ -6,7 +6,8 @@
   --white: #ffffff;
 
   /* Typography */
-  --text-preset: "Outfit", serif;
+  --text-preset-1: bold 1.375rem/120% "Outfit", serif;
+  --text-preset-2: normal 0.9375rem/140% "Outfit", serif;
 }
 
 *,
@@ -19,7 +20,7 @@
 
 body {
   background: var(--slate-300);
-  font-family: var(--text-preset);
+  font: var(--text-preset-2);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -46,13 +47,12 @@ body {
   }
 
   h1 {
+    font: var(--text-preset-1);
     color: var(--slate-900);
     margin-block: 1.5rem;
-    font-size: 1.5rem;
   }
 
   p {
     color: var(--slate-500);
-    font-size: 1rem;
   }
 }
